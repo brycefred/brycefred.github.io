@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryce Frederickson</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- MathJax for rendering LaTeX -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bryce Frederickson</h1>
+        <p>PhD Student at Emory University</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Research</a>
+            <a href="#publications">Papers</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <br>
+        <img src="IMG_1598.jpg" width="256" height="374">
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a PhD student in mathematics with interests in extremal graph theory, combinatorics, and linear algebra. I'm currently studying at Emory University under the supervision of Liana Yepremyan.</p>
+            
+        </section>
+
+        <section id="projects">
+            <h2>Research Projects</h2>
+            <article>
+                <h3>Vector Space Ramsey Numbers</h3>
+                <p>Joint work with Liana Yepremyan <a href="https://academic.oup.com/qjmath/article-abstract/76/1/77/7926464" target="_blank">Link to paper</a></p> <br>
+                <p><strong>Description:</strong> This research explores quantitative aspects of the following vector space analogue of Ramsey's theorem due to Graham, Leeb, and Rothschild:</p> <br>
+                <p><em>For any finite field \(\mathbb F_q\) and positive integers \(r, k, t\), there exists a positive integer \(n\) such that in any \(k\)-coloring of the \(r\)-dimensional subspaces of \(\mathbb F_q^n\), there exists a monochromatic \(t\)-dimensional subspace.</em> <br><br>We denote the minimum such \(n\) by \(R_q^{(r)}(t;k)\).</p> <br>
+                <p><strong>Results and open problems:</strong> A proof of the above result by Joel Spencer gives upper bounds that can be expressed recursively in terms of Hales-Jewett numbers. More reasonable bounds can be recovered when \(r=1\) and \(q \in \{2,3\}\). In this case, we prove that \(R_q^{(1)}(t;k)\) is at most a tower of height roughly \((k-1)t\). Probabilistic lower bounds are exponential in \(t\) for every fixed \(k\), over any finite field. It would be interesting to close this gap, and also to give better estimates when \(q > 3\).</p> <br>
+                <p>We also consider the off-diagonal version of this problem; let \(R_q^{(r)}(s,t)\) denote the minimum \(n\) such that in every red/blue coloring of the \(r\)-dimensional subspaces of \(\mathbb F_q^n\), there exists a red \(s\)-space or a blue \(t\)-space. We show that for \(r=1\), \(q \in \{2,3\}\), and \(s=2\), we have the exponential upper bound \(R_q^{(1)}(2,t) \leq C_q^{t + o(t)}\), where \(C_2 \approx 1.565\), and \(C_3 \approx 13.901\). In the \(q=2\) case, this was subsequently improved to a polynomial bound of the form \(R_2^{(1)}(2,t) = O(t^7)\) by Hunter and Pohoata. Here, probabilistic lower bounds are linear in \(t\), and again, we know very little when \(q > 3\). A recent conjecture of Chun, Douthitt, Ge, Huynh, Kroeker, and Nelson, suggested by Jacob Fox, if true, would imply that \(R_q^{(1)}(s,t) = \Theta(t)\) for every fixed \(q\) and \(s\).
+            </article>
+            <article>
+                <h3>Rainbow Paths in Properly Edge-Colored Graphs</h3>
+                <p>Joint work with Matija Buci&#263;, Alp M&#252yesser, Alexey Pokrovskiy, and Liana Yepremyan <a href="https://arxiv.org/abs/2503.01825" target="_blank">arXiv:2503.01825</a></p> <br>
+                <p><strong>Description:</strong> Erd&#337;s and Gallai proved that every graph of average degree \(d\) contains a path of length at least \(d\). If \(G\) is given a proper edge-coloring, can we find such a path which is <em>rainbow</em> (i.e., such that the edges all have distinct colors)? What if we assume that \(G\) has minimum degree \(d\)? How about \(d\)-regular?</p> <br>
+                <p><strong>Results and open problems:</strong> It turns out that there are easy constructions of properly edge-colored \(d\)-regular graphs with no rainbow path of length \(d\). However, Schrijver showed that for \(d \leq 10\), there always exists a rainbow path of length \(d-1\) in any properly edge-colored \(d\)-regular graph, and he asked if this holds for all \(d\). We show that as \(d \to \infty\), there always exists a path of length \((1-o(1))d\). It is still open to prove such an asymptotic result for graphs of minimum degree \(d\) and average degree \(d\). Chen and Li conjectured that in the minimum degree setting, there should always exist a rainbow path of length \(d-1\). In the average degree setting, Halfpap conjectured that there should always exist a rainbow path of length \(d-O(1)\).</p> <br>
+                    <p>Also, by considering the directed analogue of this problem, we asymptotically resolve the following conjecture of Graham: <em>Any \(d\) distinct nonzero elements of \(\mathbb{Z}_p\) can be ordered as \(x_1, \ldots, x_d\) such that the partial sums \(x_1, x_1 + x_2, \ldots, x_1 + \cdots + x_d\) are all distinct.</em> We prove that in <em>any</em> group \(\Gamma\), any \(d\) elements can be ordered as \(x_1, \ldots, x_d\) such that there are \((1-o(1))d\) distinct values among the partial products \(x_1, x_1x_2, \ldots, x_1 \cdots x_d\). Moreover, under certain circumstances (for instance, if \(d = \Omega(|\Gamma|)\) or if \(\Gamma = \mathbb{F}_2^n\)), we show that the first \((1-o(1))d\) partial products can be made distinct.</p>
+            </article>
+        </section>
+
+        <section id="publications">
+            <h2>Papers</h2>
+            <h3>Publications</h3>
+            <ul>
+                <li><strong>A new family of Sidorenko linear configurations</strong> with Nina Kamčev, Anita Liebenau, and Geertrui Van de Voorde. Book chapter in <em>2023 Matrix Annals</em>, 2025. – <a href="https://link.springer.com/chapter/10.1007/978-3-031-76738-8_46" target="_blank">Link</a></li>
+                <li><strong>Vector space Ramsey numbers and weakly Sidorenko affine configurations</strong> with Liana Yepremyan. <em>Quarterly Journal of Mathematics</em>, 2025 – <a href="https://academic.oup.com/qjmath/article-abstract/76/1/77/7926464" target="_blank">Link</a></li>
+                <li><strong>A note on the induced Ramsey theorem for spaces</strong> with Vojtěch Rödl and Marcelo Sales. <em>Combinatorial Theory</em>, 2024 – <a href="https://escholarship.org/uc/item/2z60n2gv" target="_blank">Link</a></li>
+                <li><strong>Triangle percolation on the grid.</strong> with Igor Araujo, Robert Krueger, Bernard Lidický, Tyrrell McAllister, Florian Pfender, Sam Sprio, and Eric Stucky. <em>Discrete and Computational Geometry</em>, 2024 – <a href="https://link.springer.com/article/10.1007/s00454-024-00645-x" target="_blank">Link</a></li>
+                <li><strong>Circuit decompositions of binary matroids</strong> with Lukas Michel. <em>SIAM Journal on Discrete Mathematics</em>, 2024 – <a href="https://epubs.siam.org/doi/abs/10.1137/23M1587439" target = "_blank">Link</a></li>
+                <li><strong>On splitting and splittable families</strong> with Samuel Coskey, Samuel Mathers, and Hao-Tong Yan. <em>Australasian Journal of Combinatorics</em>, 2022 – <a href="https://ajc.maths.uq.edu.au/pdf/82/ajc_v82_p268.pdf" target="_blank">Link</a></li>
+                <li><strong>Entropy of tournament digraphs</strong> with David Brown, Eric Culver, Sidney Tate, and Brent Thomas. <em>Linear Algebra and its Applications</em>, 2020 – <a href="https://doi.org/10.1016/j.laa.2019.09.026" target="_blank">Link</a></li>
+                <li><strong>Rényi Ordering of Tournaments</strong> with David Brown. <em>Journal of Combinatorial Mathematics and Combinatorial Computing</em>, 2020 – <a href="https://combinatorialpress.com/jcmcc/vol114/" target="_blank">Link</a></li>
+            </ul>
+            <br>
+            <h3>Preprints</h3>
+            <ul>
+                <li><strong>Improved Decomposition Bounds for Partition Polytopes and Odd-Covers</strong> with Steffen Borgwardt, Zdeněk Dvořák, Abigail Nix, and Youngho Yoo. Submitted. <a href="https://arxiv.org/abs/2507.12748" target="_blank">arXiv:2507.12748</a></li>
+                <li><strong>Towards Graham’s rearrangement conjecture via rainbow paths</strong> with Matija Bucić, Alp Müyesser, Alexey Pokrovskiy, and Liana Yepremyan. Submitted. <a href="https://arxiv.org/abs/2503.01825" target="_blank">arXiv:2503.01825</a></li>
+                <li><strong>Treewidth, Hadwiger Number, and Induced Minors</strong> with Rutger Campbell, James Davies, Marc Distel, Pascal Gollin, Kevin Hendrey, Robert Hickingbotham, Sebastian Wiederrecht, David Wood, and Liana Yepremyan. Submitted. <a href="https://arxiv.org/abs/2410.19295" target="_blank">arXiv:2410.19295</a></li>
+                <li><strong>Regular bipartite decompositions of pseudorandom graphs</strong> with Asaf Ferber, Dingjia Mao, Liana Yepremyan, and Yizhe Zhu. Submitted. <a href="https://arxiv.org/abs/2410.12981" target="_blank">arXiv:2410.12981</a></li>
+                <li><strong>Path odd-covers of graphs</strong> with Steffen Borgwardt, Calum Buchanan, Eric Culver, Puck Rombach, and Youngho Yoo. Submitted. <a href="https://arxiv.org/abs/2306.06487" target="_blank">arXiv:2306.06487</a></li>
+            </ul>
+        </section>
+        
+        <section id="teaching">
+            <h2>Teaching</h2>
+            <h3>Emory University (main instructor)</h3>
+            <ul>
+                <li>Linear Algebra (MATH 221): Summer 2023</li>
+                <li>Calculus I (MATH 111): Fall 2022, Spring 2023 </li>
+            </ul>
+            <br>
+            <h3>Emory University (teaching assistant / recitation leader)</h3>
+            <ul>
+                <li>Real Analysis II (MATH 412): Spring 2022</li>
+                <li>Real Analysis I (MATH 411): Fall 2021</li>
+            </ul>
+            <br>
+            <h3>Utah State University (Math/Stat Teaching Fellow / recitation leader)</h3>
+            <ul>
+                <li>Linear Algebra (MATH 2270): Fall 2019, Spring 2020</li>
+                <li>Analysis I (MATH 5210): Fall 2018</li>
+                <li>Calculus II (MATH 1210): Fall 2017</li>
+            </ul>
+        </section>
+
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            <p>Download my CV: <a href="Frederickson_CV.pdf" target="_blank">Frederickson_CV.pdf</a></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email me at bryce [dot] frederickson [at] emory [dot] edu.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bryce Frederickson. All rights reserved.</p>
+    </footer>
+</body>
+</html>
